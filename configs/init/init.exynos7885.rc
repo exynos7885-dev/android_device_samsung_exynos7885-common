@@ -6,6 +6,8 @@ on early-init
 
 on init
 	start watchdogd
+        setprop ro.boot.hardware.revision ${ro.revision}
+
     # See storage config details at http://source.android.com/tech/storage/
     mkdir /storage/sdcard 0000 root root
     mkdir /storage/usb1 0000 root root
