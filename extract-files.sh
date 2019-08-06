@@ -66,6 +66,9 @@ function blob_fixup() {
         vendor/lib/hw/audio.primary.exynos7885.so|vendor/lib/libaudio-ril.so|vendor/lib*/libwrappergps.so)
             "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so "${2}"
             ;;
+	vendor/lib*/hw/camera.exynos7885.so|vendor/lib*/libexynoscamera.so|vendor/lib*/libexynoscamera3.so)
+	    "${PATCHELF}" --replace-needed "libcamera_client.so" "libcamera_metadata_helper.so" "${2}"
+	    ;;
     esac
 }
 
