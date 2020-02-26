@@ -16,6 +16,7 @@
 
 ## Common Path
 COMMON_PATH := device/samsung/exynos7885-common
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -65,6 +66,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
 
 # Fingerprint
 PRODUCT_PACKAGES += \
