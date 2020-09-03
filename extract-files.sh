@@ -73,6 +73,9 @@ function blob_fixup() {
 	    "${PATCHELF}" --replace-needed "libcamera_client.so" "libcamera_metadata_helper.so" "${2}"
 	    "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
 	    ;;
+        vendor/lib*/libsensorlistener.so)
+            "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
+            ;;
     esac
 }
 
