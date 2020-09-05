@@ -180,6 +180,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.samsung-libperfmgr
 
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/linker/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
