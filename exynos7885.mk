@@ -249,6 +249,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
     WifiOverlay \
     android.hardware.wifi@1.0-service \
     hostapd \
