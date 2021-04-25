@@ -63,6 +63,9 @@ function blob_fixup() {
         vendor/etc/init/wifi.rc)
             sed -i '41,51d' "${2}"
             ;;
+        vendor/etc/libnfc-nci.conf)
+            sed -i 's/\/data\/nfc/\/data\/vendor\/nfc/g' "${2}"
+            ;;
         vendor/lib/hw/audio.primary.exynos7885.so|vendor/lib/libaudio-ril.so|vendor/lib*/libwrappergps.so)
             "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so "${2}"
             ;;
