@@ -46,6 +46,9 @@ TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 
+## Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_exynos7885
+
 ## Kernel
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
