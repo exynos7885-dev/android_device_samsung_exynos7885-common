@@ -68,6 +68,7 @@ BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos7885
 
 ## Props
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery
