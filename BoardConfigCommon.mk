@@ -81,6 +81,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 ## Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
+## SELinux
+BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
+
 ## Vintf
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
