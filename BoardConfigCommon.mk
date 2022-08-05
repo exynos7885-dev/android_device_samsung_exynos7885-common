@@ -74,6 +74,10 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 ## Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.exynos7885
 
+## RIL
+BOARD_PROVIDES_LIBRIL := true
+ENABLE_VENDOR_RIL_SERVICE := true
+
 ## Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
