@@ -83,6 +83,7 @@ BOARD_ROOT_EXTRA_FOLDERS := efs
 
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
 
