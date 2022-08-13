@@ -205,7 +205,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio.config@1.2 \
-    librilutils
+    librilutils \
+    secril_config_svc
 
 # Sensors
 PRODUCT_PACKAGES += \
