@@ -71,6 +71,7 @@ function blob_fixup() {
             ;;
 	vendor/lib*/hw/camera.exynos7885.so|vendor/lib*/libexynoscamera.so|vendor/lib*/libexynoscamera3.so)
 	    "${PATCHELF}" --replace-needed "libcamera_client.so" "libcamera_metadata_helper.so" "${2}"
+	    "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
 	    ;;
     esac
 }
