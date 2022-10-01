@@ -238,11 +238,8 @@ on post-fs-data
 
     write /sys/module/scsc_mx/parameters/disable_recovery_handling 0
 
-# Samsung Pay
-    mkdir /efs/pfw_data 0760 spay spay    
-
 # MST/NFC Switch
-    chown spay system /dev/mst_ctrl
+    chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
     
 # setup cgroup freezer for freecess
