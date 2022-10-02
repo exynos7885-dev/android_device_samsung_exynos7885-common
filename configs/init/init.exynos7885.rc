@@ -132,6 +132,8 @@ on post-fs-data
     chown system system /sys/class/mdnie/mdnie/whiteRGB
     chown system system /sys/class/mdnie/mdnie/light_notification
     chown system system /sys/class/mdnie/mdnie/color_lens
+    chmod 0660 /sys/class/mdnie/mdnie/lux
+    chown system system /sys/class/mdnie/mdnie/lux
 
 # Permissions Camera
     mkdir /data/vendor/camera 0770 cameraserver system
