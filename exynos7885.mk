@@ -20,6 +20,9 @@ COMMON_PATH := device/samsung/exynos7885-common
 ## Inherit common vendor blobs
 $(call inherit-product, vendor/samsung/exynos7885-common/exynos7885-common-vendor.mk)
 
+## Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
