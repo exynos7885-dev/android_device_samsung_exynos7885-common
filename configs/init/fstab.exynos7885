@@ -10,7 +10,7 @@
 /dev/block/platform/13500000.dwmmc0/by-name/VENDOR /vendor ext4 ro wait,check,first_stage_mount
 /dev/block/platform/13500000.dwmmc0/by-name/ODM /odm ext4 ro wait,check,first_stage_mount
 /dev/block/platform/13500000.dwmmc0/by-name/CACHE	/cache	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check
-/dev/block/platform/13500000.dwmmc0/by-name/USERDATA	/data	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,quota,reservedsize=128M,length=-20480
+/dev/block/platform/13500000.dwmmc0/by-name/USERDATA	/data	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,fileencryption=aes-256-xts,quota,reservedsize=128M,length=-20480
 /dev/block/platform/13500000.dwmmc0/by-name/EFS	/mnt/vendor/efs	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check
 /dev/block/platform/13500000.dwmmc0/by-name/MISC	/misc	emmc      defaults  defaults
 
