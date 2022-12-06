@@ -56,5 +56,4 @@ void vendor_load_properties() {
     }
 
     set_ro_build_prop("model", model);
-    set_ro_build_prop("product", model, false);
 }
