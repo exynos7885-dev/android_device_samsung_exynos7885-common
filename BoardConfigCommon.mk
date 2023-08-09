@@ -72,3 +72,7 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.exynos7885
 
 ## Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
+
+## Vintf
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
