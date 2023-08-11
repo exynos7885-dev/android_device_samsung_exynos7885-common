@@ -67,6 +67,9 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos7885
 
+## Props
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 ## Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.exynos7885
 
