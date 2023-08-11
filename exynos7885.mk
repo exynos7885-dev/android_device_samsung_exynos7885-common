@@ -17,5 +17,9 @@
 ## Common Path
 COMMON_PATH := device/samsung/exynos7885-common
 
+## Init
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/init/init.recovery.exynos7885.rc:$(TARGET_RECOVERY_OUT)/root/init.recovery.exynos7885.rc \
+
 ## Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
