@@ -17,6 +17,9 @@
 ## Common Path
 COMMON_PATH := device/samsung/exynos7885-common
 
+## Inherit common vendor blobs
+$(call inherit-product, vendor/samsung/exynos7885-common/exynos7885-common-vendor.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
