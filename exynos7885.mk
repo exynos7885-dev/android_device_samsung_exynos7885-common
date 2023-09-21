@@ -107,6 +107,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/fstab.exynos7885:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.exynos7885 \
     $(COMMON_PATH)/configs/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     $(COMMON_PATH)/configs/init/init.recovery.exynos7885.rc:$(TARGET_RECOVERY_OUT)/root/init.recovery.exynos7885.rc \
+    $(COMMON_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
     $(COMMON_PATH)/configs/init/init.exynos7885.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.exynos7885.rc \
     $(COMMON_PATH)/configs/init/init.exynos7885.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos7885.usb.rc \
     $(COMMON_PATH)/configs/init/mobicore.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mobicore.rc \
