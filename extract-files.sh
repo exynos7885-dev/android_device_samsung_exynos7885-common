@@ -63,6 +63,9 @@ function blob_fixup() {
         vendor/etc/init/wifi.rc)
             sed -i '41,51d' "${2}"
             ;;
+        vendor/lib/hw/audio.primary.exynos7885.so|vendor/lib/libaudio-ril.so|vendor/lib*/libwrappergps.so)
+            "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so "${2}"
+            ;;
     esac
 }
 

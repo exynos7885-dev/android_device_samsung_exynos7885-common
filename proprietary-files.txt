@@ -18,7 +18,6 @@ vendor/lib/librecordalive.so
 vendor/lib/libsamsungDiamondVoice.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libtinyalsa.so
-vendor/lib/libvndsecril-client.so
 
 # Audio Configs
 vendor/etc/SoundBoosterParam.txt
