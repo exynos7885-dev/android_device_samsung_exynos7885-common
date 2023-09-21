@@ -58,8 +58,13 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-#function blob_fixup() {
-#}
+function blob_fixup() {
+    case "${1}" in
+        vendor/etc/init/wifi.rc)
+            sed -i '41,51d' "${2}"
+            ;;
+    esac
+}
 
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
