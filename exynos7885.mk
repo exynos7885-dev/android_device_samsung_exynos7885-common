@@ -114,6 +114,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
     $(COMMON_PATH)/configs/init/init.exynos7885.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.exynos7885.rc \
     $(COMMON_PATH)/configs/init/init.exynos7885.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos7885.usb.rc \
+    $(COMMON_PATH)/configs/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
+    $(COMMON_PATH)/configs/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     $(COMMON_PATH)/configs/init/mobicore.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mobicore.rc \
     $(COMMON_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
