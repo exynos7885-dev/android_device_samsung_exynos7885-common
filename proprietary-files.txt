@@ -35,6 +35,13 @@ vendor/lib/libexynoscamera3.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
 vendor/lib/libhwjpeg.so
+vendor/lib/libgiantmscl.so
+vendor/lib/libhifills_interface.so
+vendor/lib/libhigh_dynamic_range.so
+vendor/lib/libvideobeauty_interface.so
+vendor/lib/libhifills.so
+vendor/lib/libmpbase.so
+vendor/lib/libsaiv_BeautySolutionVideo.so
 vendor/lib64/hw/camera.exynos7885.so
 vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/libexynoscamera.so
@@ -42,6 +49,13 @@ vendor/lib64/libexynoscamera3.so
 vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so
 vendor/lib64/libhwjpeg.so
+vendor/lib64/libgiantmscl.so
+vendor/lib64/libhifills_interface.so
+vendor/lib64/libhigh_dynamic_range.so
+vendor/lib64/libvideobeauty_interface.so
+vendor/lib64/libhifills.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libsaiv_BeautySolutionVideo.so
 
 # Fingerprint
 vendor/lib/libbauthserver.so
