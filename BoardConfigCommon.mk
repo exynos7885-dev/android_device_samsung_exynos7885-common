@@ -35,6 +35,9 @@ BOARD_HAVE_BLUETOOTH_SLSI := true
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := exynos7885
 
+## Build System
+BUILD_BROKEN_DUP_RULES := true
+
 ## Headers
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
