@@ -285,6 +285,11 @@ vendor/lib64/hw/sensors.universal7885.so:vendor/lib64/hw/sensors.exynos7885.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libyasalgo.so
 
+# Widevine
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib/libwvhidl.so
+
 # WiFi
 vendor/bin/hw/macloader
 vendor/etc/init/wifi.rc
