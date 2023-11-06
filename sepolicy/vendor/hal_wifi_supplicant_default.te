@@ -1,0 +1,2 @@
+#a7y18lte
+allow hal_wifi_supplicant_default conn_vendor_data_file:dir search;
