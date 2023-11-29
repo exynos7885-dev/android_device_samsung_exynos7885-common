@@ -15,5 +15,5 @@ allow hal_sensors_default vendor_data_file:file create_file_perms;
 allow hal_sensors_default vendor_data_file:dir create_dir_perms;
 # a7y18lte
 allow hal_sensors_default efs_file:file { open read };
-allow hal_sensors_default sysfs_input:file { open write };
+allow hal_sensors_default sysfs_input:file { open read };
 allow hal_sensors_default vendor_data_file:file { write };

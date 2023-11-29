@@ -4,5 +4,6 @@ allow fsck efs_block_device:blk_file rw_file_perms;
 allow fsck omr_block_device:blk_file rw_file_perms;
 
 allow fsck sysfs_battery:dir search;
-allow fsck block_device:blk_file { read open write ioctl };
+dontaudit fsck block_device:blk_file { read open write ioctl };
+allow fsck efs_block_device:blk_file rw_file_perms;
 allow fsck sysfs_battery:dir { search };

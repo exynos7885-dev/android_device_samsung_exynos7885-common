@@ -1,4 +1,4 @@
 allow cbd factoryprop_efs_file:file r_file_perms;
 allow cbd sysfs_info:file r_file_perms;
-allow cbd block_device:blk_file { read open };
+dontaudit cbd block_device:blk_file { read open };
 allow cbd sysfs:file { read open write };
