@@ -2,5 +2,7 @@ allow fsck cache_file:dir getattr;
 allow fsck tmpfs:blk_file getattr;
 allow fsck efs_block_device:blk_file rw_file_perms;
 allow fsck omr_block_device:blk_file rw_file_perms;
-#a7y18lte
+
 allow fsck sysfs_battery:dir search;
+allow fsck block_device:blk_file { read open write ioctl };
+allow fsck sysfs_battery:dir { search };

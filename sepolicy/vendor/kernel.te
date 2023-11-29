@@ -17,3 +17,5 @@ allow kernel loop_device:blk_file { create setattr };
 
 # a7y18lte
 allow kernel sysfs_sec_key:file { open read };
+
+allow kernel device:dir { write add_name remove_name };

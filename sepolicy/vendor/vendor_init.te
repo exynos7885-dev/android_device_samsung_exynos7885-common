@@ -20,3 +20,11 @@ set_prop(vendor_init, vendor_powerhal_prop)
 
 # a7y18lte
 allow vendor_init tmpfs:lnk_file create;
+allow vendor_init camera_data_file:dir { getattr };
+allow vendor_init debugfs_trace_marker:file { getattr };
+allow vendor_init system_data_file:dir { read open ioctl };
+allow vendor_init tmpfs:dir { write add_name create };
+allow vendor_init wifi_data_file:dir { search getattr };
+allow vendor_init wpa_socket:dir { getattr };
+allow vendor_init proc:file { write };
+allow vendor_init cgroup:file { getattr };

@@ -11,4 +11,3 @@ allow hal_fingerprint_default goodix_device:chr_file rw_file_perms;
 
 allow hal_fingerprint_default self:netlink_socket { bind create write read };
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
-

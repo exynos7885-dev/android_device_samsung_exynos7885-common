@@ -31,3 +31,4 @@ set_prop(rild, radio_prop)
 # a7y18lte
 allow rild log_vendor_data_file:dir { create setattr };
 
+allow rild block_device:blk_file { read open };

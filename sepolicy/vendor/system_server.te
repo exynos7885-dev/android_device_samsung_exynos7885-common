@@ -27,3 +27,9 @@ allow system_server unlabeled:file { write setattr };
 # a7y18lte
 # Never allow system_server sysfs:file {  };
 allow system_server sysfs:file { getattr open read };
+allow system_server block_device:blk_file { open read getattr ioctl write };
+allow system_server device:chr_file { read write ioctl };
+allow system_server init:binder { call transfer };
+allow system_server sysfs:file { read open getattr };
+allow system_server userspace_reboot_config_prop:file { open };
+allow system_server userspace_reboot_exported_prop:file { open getattr };

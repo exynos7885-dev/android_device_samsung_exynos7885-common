@@ -5,3 +5,4 @@ allow mediacodec sysfs_v4l_mfc:file r_file_perms;
 
 hal_client_domain(mediacodec, hal_power)
 hal_client_domain(mediacodec, hal_omx)
+allow mediacodec sysfs:file { open read getattr };
