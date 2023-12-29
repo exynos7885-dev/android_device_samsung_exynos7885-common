@@ -1,0 +1,3 @@
+dontaudit secril_config_svc exported3_radio_prop:property_service set;
+get_prop(secril_config_svc, exported_config_prop)
+get_prop(secril_config_svc, vendor_radio_prop)

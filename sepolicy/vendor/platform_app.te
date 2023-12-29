@@ -1,0 +1,6 @@
+# /dev/mali0
+allow platform_app gpu_device:chr_file rw_file_perms;
+
+allow platform_app device:chr_file  { getattr ioctl } ;
+dontaudit platform_app device:chr_file { read write open };
+dontaudit platform_app vendor_file:file { read getattr };

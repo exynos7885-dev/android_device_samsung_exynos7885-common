@@ -1,0 +1,8 @@
+get_prop(zygote, exported_camera_prop)
+
+allow zygote proc_cmdline:file r_file_perms;
+dontaudit zygote unlabeled:file write;
+
+dontaudit zygote device:file { write open ioctl };
+allow zygote exported_camera_prop:file { open read getattr };
+dontaudit zygote vendor_file:file { read getattr execute open };

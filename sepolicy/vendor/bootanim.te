@@ -1,0 +1,6 @@
+get_prop(bootanim, userspace_reboot_exported_prop) 
+allow bootanim system_data_file:dir read;
+allow bootanim device:chr_file { getattr ioctl };
+dontaudit bootanim device:chr_file { read write open };
+allow bootanim userspace_reboot_exported_prop:file { open read getattr };
+dontaudit bootanim vendor_file:file { read open getattr execute };

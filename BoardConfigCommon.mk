@@ -61,6 +61,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
+TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 ## Kernel Source
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7885
@@ -94,6 +95,8 @@ BOARD_ROOT_EXTRA_FOLDERS := efs
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := mobicore
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_PLAT_PLUBIC_SEPOLICY_DIR  += $(COMMON_PATH)/sepolicy/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
 

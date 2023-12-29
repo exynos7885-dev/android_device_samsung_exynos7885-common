@@ -1,0 +1,15 @@
+# device.te
+
+type tz_device, dev_type;
+type tz_user_device, dev_type;
+# /dev/m2m1shot_scaler0
+type m2m1shot_device, dev_type;
+
+# gps
+type gps_device, dev_type;
+
+# /dev/goodix_fp
+type goodix_device, dev_type;
+
+
+type drm_device, dev_type;

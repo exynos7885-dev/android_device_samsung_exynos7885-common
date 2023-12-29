@@ -1,0 +1,9 @@
+# /dev/mali0
+allow surfaceflinger gpu_device:chr_file rw_file_perms;
+
+# libion_exynos
+allow surfaceflinger same_process_hal_file:file rx_file_perms;
+
+allow surfaceflinger device:chr_file { getattr ioctl };
+dontaudit surfaceflinger device:chr_file { read write open };
+dontaudit surfaceflinger vendor_file:file { read getattr execute open };
